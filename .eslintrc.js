@@ -40,7 +40,14 @@ module.exports = {
         'jsx-a11y/no-onchange': 0,
 
         // Why would you want unused vars?
-        '@typescript-eslint/no-unused-vars': ['warn'],
+        // '@typescript-eslint/no-unused-vars': ['warn'],
+        "@typescript-eslint/no-unused-vars": "off",
+
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+
+
+
 
         // I suggest this setting for requiring return types on functions only where useful
         '@typescript-eslint/explicit-function-return-type': [
