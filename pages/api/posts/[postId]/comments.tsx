@@ -36,12 +36,16 @@ function createCommentsTree(data: CommentType[], postId: number) {
 //   if (comments.length < )
 // }
 
+
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  
   const sortingBehavior = 'pathVotesRecent';
-  const postId = +req.query.postId;
+  const postId = req.query.postId ? +req.query.postId : 0;
+  
   const pageSize = 500;
-  const startRange = +req.query?.start || 0;
-  const endRange = +req.query?.end || startRange + pageSize - 1;
+  const startRange = req.query.start ? +req.query.start : 0;
+  const endRange = req.query.end ? +req.query.end : startRange + pageSize - 1;
   console.log(startRange, endRange);
   const path = postgresArray([postId]);
   const { data: post, error: postError } = await supabase
