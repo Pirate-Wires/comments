@@ -20,11 +20,13 @@ module.exports = {
       },
       extends: [
         'eslint:recommended',
+        'next',
         'plugin:@typescript-eslint/recommended', // TypeScript rules
         'plugin:react/recommended', // React rules
         'plugin:react-hooks/recommended', // React hooks rules
         'plugin:jsx-a11y/recommended', // Accessibility rules
         'plugin:prettier/recommended', // Prettier plugin
+        'plugin:@next/next/recommended',
       ],
       rules: {
         // We will use TypeScript's types for component props instead
