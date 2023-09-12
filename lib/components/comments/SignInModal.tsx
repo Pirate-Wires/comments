@@ -51,8 +51,11 @@ function MagicLinkView({ email, setEmail, setAuthView }: MagicLinkViewProps): JS
       <h1 className="text-2xl leading-6 font-semibold dark:text-white" id="modal-headline">
         Sign in
       </h1>
-      <p className="text-sm my-2 text-gray-600 dark:text-gray-200">
+      {/* <p className="text-sm my-2 text-gray-600 dark:text-gray-200">
         Don&apos;t worry, we&apos;ll save your comment.
+      </p> */}
+      <p className="text-sm my-2 text-gray-600 dark:text-gray-200">
+        Use GitHub auth for testing.
       </p>
       <div>
         <div>
@@ -69,12 +72,12 @@ function MagicLinkView({ email, setEmail, setAuthView }: MagicLinkViewProps): JS
         </div>
         <div className="flex items-center my-3">
           <div className="w-full h-px bg-gray-300"></div>
-          <div className="text-gray-600 text-sm px-2 flex-shrink-0 dark:text-gray-200">
+          {/* <div className="text-gray-600 text-sm px-2 flex-shrink-0 dark:text-gray-200">
             Or, use my email address
-          </div>
+          </div> */}
           <div className="w-full h-px bg-gray-300"></div>
         </div>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <label className="block mb-2">
             <div className="text-sm mb-1">Email:</div>
             <input
@@ -96,7 +99,7 @@ function MagicLinkView({ email, setEmail, setAuthView }: MagicLinkViewProps): JS
           >
             Send email link
           </button>
-        </form>
+        </form> */}
       </div>
     </>
   );
