@@ -1,10 +1,6 @@
-module.exports = {
-  // Change your rules accordingly to your coding style preferences.
-  // https://prettier.io/docs/en/options.html
-  semi: true,
-  trailingComma: 'es5',
-  singleQuote: true,
-  printWidth: 70,
-  tabWidth: 2,
-  useTabs: false,
-};
+export const semi = true;
+export const trailingComma = 'es6';
+export const singleQuote = false;
+export const printWidth = 70;
+export const tabWidth = 2;
+export const useTabs = false;
