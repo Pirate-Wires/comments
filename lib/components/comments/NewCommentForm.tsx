@@ -7,7 +7,7 @@ import punctuationRegex from '@lib/utils/regex/punctuationRegex';
 import { CommentType } from '@lib/utils/types';
 import { useUser } from '@lib/hooks/use-user';
 import cn from 'classnames';
-import cuid from 'cuid';
+import cuid from '@paralleldrive/cuid2'
 import React, { useRef, useState, useEffect } from 'react';
 import NewUserModal from '@lib/components/comments/NewUserModal';
 import { useComments } from '@lib/hooks/use-comments';
